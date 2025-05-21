@@ -1,0 +1,114 @@
+
+    body {
+      margin: 20px;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #f7f7f7;
+      color: #222;
+    }
+    /* Header */
+    .header {
+      position: relative;
+      margin-bottom: 60px;
+    }
+    .header-content {
+      padding: 24px 40px 0 40px;
+    }
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #fff;
+      padding: 10px 30px;
+      border-radius: 30px;
+      border-color: #222;
+      border-width: 1px;
+      border-style: solid;
+      position: relative;
+    }
+    .navbar-left {
+      display: flex;
+      align-items: center;
+    }
+    .logo {
+      height: 32px;
+      margin-right: 10px;
+    }
+    .program-title {
+      font-size: 20px;
+      font-weight: bold;
+      color: #2362c7;
+    }
+    .navbar-right a {
+      color: #222;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: 500;
+    }
+    .divider {
+      color: #aaa;
+      margin: 0 5px;
+    }
+  
+            .about-us {
+            display: flex;
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .content {
+            flex-basis: 50%;
+            padding: 20px;
+        }
+
+        .team-image {
+            flex-basis: 50%;
+            position: relative;
+            display: flex;
+        }
+
+        .team-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            position: relative;
+            top: 120px;
+        }
+
+      
+
+        h1 {
+            color: rgba(0, 85, 162, 1);
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+
+        .btn {
+            background-color: #2962ff;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #1a45ff;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .content, .team-image {
+                flex-basis: 100%;
+            }
+
+            .team-image {
+                margin-top: 40px;
+            }
+        }
