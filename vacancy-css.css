@@ -1,0 +1,139 @@
+ 
+    :root {
+      --primary: #007bff;
+      --bg-light: #f4f4f4;
+      --white: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--bg-light);
+      display: flex;
+    }
+
+    /* Sidebar */
+    aside {
+      width: 220px;
+      background-color: var(--primary);
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding-top: 100px;
+      color: var(--white);
+      box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+    }
+
+    aside ul {
+      list-style: none;
+      padding: 0 20px;
+    }
+
+    aside ul li {
+      padding: 15px 10px;
+      font: 1.1em 'Segoe UI', sans-serif;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    aside ul li:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    aside ul li i {
+      margin-right: 10px;
+      font-size: 16px;
+    }
+
+    /* Header */
+    header {
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      right: 10px;
+      height: 50px;
+      background-color: var(--white);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 30px;
+      border-radius: 30px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      z-index: 10;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-container img {
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    .logo-container span {
+      font-size: 20px;
+      font-weight: bold;
+      color: var(--primary);
+    }
+
+    header nav ul {
+      list-style: none;
+      display: flex;
+    }
+
+    header nav ul li {
+      margin-left: 20px;
+    }
+
+    header nav ul li a {
+      text-decoration: none;
+      font-weight: 600;
+      color: #333;
+    }
+
+    /* Main Content */
+    main {
+      margin-left: 220px;
+      padding: 80px 40px 40px;
+      flex: 1;
+    }
+
+    aside ul li a {
+      color: var(--white);
+      text-decoration: none;
+    }
+    
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      aside {
+        display: none;
+      }
+
+      header {
+        left: 0;
+      }
+
+      main {
+        margin-left: 0;
+        padding: 100px 20px 40px;
+      }
+
+      .half {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+    }

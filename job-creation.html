@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Job Creation</title>
+  <style>
+    body {
+  background: #f4f4f4;
+  font-family: Arial, sans-serif;
+  padding: 10px;
+}
+
+.job-form-container {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  max-width: 600px; /* reduced width */
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.job-form-container h2 {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.form-row {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.form-group {
+  flex: 1 1 100%;
+  min-width: 180px;
+}
+
+/* For 3-column layout */
+.form-row.trio .form-group {
+  flex: 1 1 calc(33.333% - 12px);
+}
+
+/* 2-column layout */
+.form-row.double .form-group {
+  flex: 1 1 calc(50% - 10px);
+}
+
+#job-id {
+  width:150px;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 4px;
+  font-size: 0.9rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+textarea {
+  width: 80%;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  background: #fafbfc;
+}
+
+textarea {
+  min-height: 60px;
+}
+
+.submit-wrapper {
+  text-align: right;
+}
+
+.submit-btn {
+  background: rgba(45, 70, 206, 1);
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 24px;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .form-row,
+  .form-row.trio,
+  .form-row.double {
+    flex-direction: column;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <div class="job-form-container">
+    <h2>Company Job Vacancy : Web Development Trainee</h2>
+    <form>
+      <!-- Row 1-->
+      <div class="form-row" id="job-id" >
+        <div class="form-group">
+          <label for="job-id">Job ID :</label>
+          <input type="text" id="job-id" />
+        </div>
+      </div>
+
+      <!-- Row 2 -->
+      <div class="form-row trio">
+        <div class="form-group">
+          <label for="job-field">Job Field :</label>
+          <input type="text" id="job-field" />
+        </div>
+        <div class="form-group">
+          <label for="job-position">Job Position :</label>
+          <input type="text" id="job-position" />
+        </div>
+        <div class="form-group">
+          <label for="contact-number">Contact Number :</label>
+          <input type="text" id="contact-number" />
+        </div>
+      </div>
+
+      <!-- Row 3 -->
+      <div class="form-row trio">
+        <div class="form-group">
+          <label for="background">Background :</label>
+          <input type="text" id="background" />
+        </div>
+        <div class="form-group">
+          <label for="salary">Salary :</label>
+          <input type="text" id="salary" />
+        </div>
+        <div class="form-group">
+          <label for="due-date">Due Date :</label>
+          <input type="date" id="due-date" />
+        </div>
+      </div>
+
+      <!-- Row 4-->
+      <div class="form-row double">
+        <div class="form-group">
+          <label for="company-email">Company Email :</label>
+          <input type="email" id="company-email" />
+        </div>
+        <div class="form-group">
+          <label for="location">Company Location :</label>
+          <input type="text" id="location" />
+        </div>
+      </div>
+
+      <!-- Row 5 -->
+      <div class="form-row double" id="last">
+        <div class="form-group" >
+          <label for="work-type">Work Type :</label>
+          <input type="text" id="work-type" />
+        </div>
+        <div class="form-group 2">
+          <label for="description">Job Description :</label>
+          <textarea id="description" rows="5"></textarea>
+        </div>
+      </div>
+
+      <!-- Submit Button -->
+      <div class="submit-wrapper">
+        <input type="submit" value="Create" class="submit-btn" />
+      </div>
+    </form>
+  </div>
+</body>
+</html>

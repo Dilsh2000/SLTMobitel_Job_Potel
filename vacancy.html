@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Job Creation</title>
+  <link rel="stylesheet" href="vacancy-css.css" />
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <aside>
+    <ul>
+    <li><i>➤</i><a href="#" onclick="document.getElementById('main-content').innerHTML='<iframe src=&quot;job-creation.html&quot; style=&quot;width:100%; height: 700px; border: none;&quot; scrolling=&quot;no&quot;></iframe>';">Job Creation</a></li>
+
+    <li><i>➤</i><a href="#" onclick="document.getElementById('main-content').innerHTML='<iframe src=&quot;Job-modification.html&quot; style=&quot;width:100%; height: 700px; border: none;&quot; scrolling=&quot;no&quot;></iframe>';">Job Modification</a></li>
+    <li><i>➤</i><a href="#" onclick="document.getElementById('main-content').innerHTML='<iframe src=&quot;Received-CVs.html&quot; style=&quot;width:100%; height: 700px; border: none;&quot; scrolling=&quot;no&quot;></iframe>';">Received CVs</a></li>
+    <li><i>➤</i><a href="#" onclick="document.getElementById('main-content').innerHTML='<iframe src=&quot;Accepted-CVs.html&quot; style=&quot;width:100%; height: 700px; border: none;&quot; scrolling=&quot;no&quot;></iframe>';">Accepted CVs</a></li>
+
+    </ul>
+  </aside>
+
+  <!-- Header -->
+  <header>
+    <div class="logo-container">
+      <img src="logo.png" alt="Logo" />
+      <span>Training Program</span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+<main id="main-content">
+
+</main>
+    <script>
+      // Default load for main-content
+      window.onload = function() {
+      document.getElementById('main-content').innerHTML = '<iframe src="job-creation.html" style="width:100%; height: 700px; border: none;" scrolling="no"></iframe>';
+      };
+    </script>
+
+</body>
+</html>
