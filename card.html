@@ -1,38 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>SLT-Mobitel Training Program</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="home.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Job Cards</title>
+  <link rel="stylesheet" href="card-css.css" />
 </head>
 <body>
-  <!-- Header -->
-  <div class="header">
-    <div class="header-content">
-      <!-- Navigation Bar -->
-      <div class="navbar">
-        <div class="navbar-left">
-          <img src="logo.png" alt="SLT Mobitel Logo" class="logo">
-          <span class="program-title">Training Program</span>
-        </div>
-        <div class="navbar-right">
-          <a href="#">Home</a>
-          <span class="divider">|</span>
-          <a href="about.html">About Us</a>
-          <span class="divider">|</span>
-          <a href="vacancies.html">Vacancies</a>
-          <span class="divider">|</span>
-          <a href="login.html">Login</a>
-        </div>
-      </div>
-    </div>
-    <div class="banner">
-      <img src="banner.png" alt="SLT Mobitel Banner">
-    </div>
-  </div>
-
-   
+  <h1>Find Your Job that is prefer for you</h1><br><br>
   <div class="container">
     <!-- Card 1 -->
     <div class="card">
@@ -52,7 +27,7 @@ computer engineering, or a related field undergraduates
         </ul>
       </div>
       <div class="card-footer">
-        <button class="apply-button">Apply Now</button>
+        <button class="apply-button" onclick="loadApplyFormContent(event)">Apply Now</button>
       </div>
     </div>
 
@@ -77,7 +52,7 @@ communication skills.</li>
         </ul>
       </div>
       <div class="card-footer">
-        <button class="apply-button">Apply Now</button>
+        <button class="apply-button" onclick="loadApplyFormContent(event)">Apply Now</button>
       </div>
     </div>
 
@@ -105,7 +80,7 @@ Platforms would be a definite advantage.</li>
         </ul>
       </div>
       <div class="card-footer">
-        <button class="apply-button">Apply Now</button>
+        <button class="apply-button" onclick="loadApplyFormContent(event)">Apply Now</button>
       </div>
     </div>
 
@@ -125,56 +100,10 @@ Conditioning etc).</li>
         </ul>
       </div>
       <div class="card-footer">
-        <button class="apply-button">Apply Now</button>
+        <button class="apply-button" onclick="loadApplyFormContent(event)">Apply Now</button>
       </div>
     </div>
   </div>
-  <!-- Footer -->
-  <div class="footer">
-        <div class="footer-column about-us">
-            <h3>ABOUT US</h3>
-            <ul>
-                <li><a href="#">Cooperate Responsibility</a></li>
-                <li><a href="#">Investors</a></li>
-                <li><a href="#">Media Center</a></li>
-                <li><a href="#">Careers</a></li>
-            </ul>
-        </div>
-
-        <div class="footer-column business">
-            <h3>BUSINESS</h3>
-            <ul>
-                <li><a href="#">Enterprises</a></li>
-                <li><a href="#">SME</a></li>
-                <li><a href="#">Wholesale</a></li>
-                <li><a href="#">International</a></li>
-            </ul>
-        </div>
-
-        <div class="footer-column contact-info">
-            <h3>CONTACT US</h3>
-            <p>Sri Lanka Telecom PLC Lotus Road, P.O.Box 503, Colombo 01, Sri Lanka.</p>
-            <p>Telephone: +94 112 021 000</p>
-            <p>Email: <a href="mailto:pr@slt.lk">pr@slt.lk</a></p>
-            <p>(Monday to Friday - 9am to 5pm)</p>
-        </div>
-
-        <div class="footer-column customer-support">
-            <h3>CUSTOMER SUPPORT</h3>
-            <p>Telephone : 1212</p>
-            <p>Email : <a href="mailto:1212@slt.com.lk">1212@slt.com.lk</a></p>
-            <p>Self Service : +94 112 12 12 12</p>
-        </div>
-
-        <div class="footer-column social-icons">
-            <img src="facebook.png" alt="Facebook">
-            <img src="twitter.png" alt="Twitter">
-            <img src="instagram.png" alt="Instagram">
-            <img src="youtube.png" alt="YouTube">
-            <img src="linkedin.png" alt="LinkedIn">
-            <img src="tiktok.png" alt="TikTok">
-        </div>
-    </div>
-
+  <button class="check-button" onclick="loadAppliedJobContent(event)">Check the Applied Job Status</button>
 </body>
 </html>

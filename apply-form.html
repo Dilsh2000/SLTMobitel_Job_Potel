@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Web Development Trainee Application</title>
+  <style>
+    body {
+      
+      background: transparent;
+      
+    }
+
+    form {
+      max-width: 800px;
+      max-height: 720px;
+      margin: auto;
+      background: transparent;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+    }
+
+    form div {
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+    }
+
+    label {
+      width: 180px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    span {
+      font-size: 16px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="date"],
+    select {
+      flex: 1;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    select {
+      background: #fff;
+    }
+
+    #cv-upload-box {
+      border: 2px dashed #999;
+      border-radius: 10px;
+      padding: 8px;
+      text-align: center;
+      color: #777;
+      background: #f9f9f9;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 50%;
+      margin: auto;
+    }
+
+    #cv-upload-box:hover {
+      border-color: #007bff;
+    }
+
+    #cv-upload-box input[type="file"] {
+      display: none;
+    }
+
+    #browse-btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 16px;
+      background-color: #fff;
+      border: 2px solid #007bff;
+      border-radius: 6px;
+      color: #007bff;
+      cursor: pointer;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    #browse-btn:hover {
+      background-color: #007bff;
+      color: white;
+    }
+
+    button[type="submit"] {
+      width: 30%;
+      background-color: #004aad;
+      color: white;
+      border: none;
+      padding: 12px;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 30px;
+      cursor: pointer;
+      margin: auto;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #003580;
+    }
+  </style>
+</head>
+<body>
+  <form action="#" method="post" enctype="multipart/form-data">
+    <div>
+      <label>Job Title:</label>
+      <span>Web Development Trainee</span>
+    </div>
+
+    <div>
+      <label for="initials">Name with Initials:</label>
+      <input type="text" id="initials" name="initials" required>
+    </div>
+
+    <div>
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" name="fullname" required>
+    </div>
+
+    <div>
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender" required>
+        <option value="">--Select--</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required>
+    </div>
+
+    <div>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+
+    <div>
+      <label for="contact">Contact Number:</label>
+      <input type="tel" id="contact" name="contact" required>
+    </div>
+
+    <div>
+      <label for="field">Field:</label>
+      <select id="field" name="field" required>
+        <option value="">--Select Field--</option>
+        <option value="tne">Trainee Network Engineers</option>
+        <option value="acc">ACCOUNTANT-FINANCIAL ACCOUNTING</option>
+        <option value="eng">ENGINEERS</option>
+        <option value="tech">TECHNICIANS</option>
+      </select>
+    </div>
+
+    <div>
+      <label>Upload your CV here:</label>
+    </div>
+    <div id="cv-upload-box" onclick="document.getElementById('cv').click();">
+      <p>Drag & Drop files here</p>
+      <p>or</p>
+      <label for="cv" id="browse-btn">Browse Files</label>
+      <input type="file" id="cv" name="cv" required>
+    </div>
+
+    <div style="margin-top: 30px;">
+      <button type="submit">Submit</button>
+    </div>
+  </form>
+</body>
+</html>
